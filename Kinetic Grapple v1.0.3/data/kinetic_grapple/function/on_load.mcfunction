@@ -8,3 +8,5 @@ scoreboard objectives add kinetic_grapple.UUID0 dummy
 scoreboard objectives add kinetic_grapple.UUID1 dummy
 scoreboard objectives add kinetic_grapple.UUID2 dummy
 scoreboard objectives add kinetic_grapple.UUID3 dummy
+
+advancement revoke @a only kinetic_grapple:pull

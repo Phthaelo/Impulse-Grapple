@@ -3,11 +3,11 @@
 advancement revoke @s only kinetic_grapple:pull
 
 #Tag Hook Item with matching UUID scores "this"
-function kinetic_grapple:uuid_store_player
-execute as @n[type=item,tag=kinetic_grapple.hook] if score @s kinetic_grapple.UUID0 = Player kinetic_grapple.UUID0 if score @s kinetic_grapple.UUID1 = Player kinetic_grapple.UUID1 if score @s kinetic_grapple.UUID2 = Player kinetic_grapple.UUID2 if score @s kinetic_grapple.UUID3 = Player kinetic_grapple.UUID3 run tag @s add kinetic_grapple.this
+function kinetic_grapple:uuid_store_stored
+execute as @e[type=item,tag=kinetic_grapple.hook] if score @s kinetic_grapple.UUID0 = .Stored kinetic_grapple.UUID0 if score @s kinetic_grapple.UUID1 = .Stored kinetic_grapple.UUID1 if score @s kinetic_grapple.UUID2 = .Stored kinetic_grapple.UUID2 if score @s kinetic_grapple.UUID3 = .Stored kinetic_grapple.UUID3 run tag @s add kinetic_grapple.this
 
 #Set Grapple Strength from Distance between Player and This Hook
-execute unless entity @n[type=item,tag=kinetic_grapple.this] run return fail
+execute unless entity @e[type=item,tag=kinetic_grapple.this] run return fail
 execute if entity @n[type=item,tag=kinetic_grapple.this,distance=0..7] run scoreboard players set @s kinetic_grapple 1
 execute if entity @n[type=item,tag=kinetic_grapple.this,distance=7..8] run scoreboard players set @s kinetic_grapple 2
 execute if entity @n[type=item,tag=kinetic_grapple.this,distance=8..9] run scoreboard players set @s kinetic_grapple 3

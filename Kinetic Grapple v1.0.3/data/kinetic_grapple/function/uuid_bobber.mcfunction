@@ -7,8 +7,8 @@ tag @s add smithed.entity
 tag @s add smithed.strict
 
 #Store Player UUID
-execute as @p[scores={kinetic_grapple.fishing_rod=1..}] run function kinetic_grapple:uuid_store_player
+execute as @p[scores={kinetic_grapple.fishing_rod=1..}] run function kinetic_grapple:uuid_store_stored
 scoreboard players reset * kinetic_grapple.fishing_rod
 
 #Copy Player UUID to Bobber
-function kinetic_grapple:uuid_copy_player
+function kinetic_grapple:uuid_copy_stored
