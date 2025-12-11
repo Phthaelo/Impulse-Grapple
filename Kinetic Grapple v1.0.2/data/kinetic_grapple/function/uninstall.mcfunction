@@ -7,5 +7,7 @@ scoreboard objectives remove kinetic_grapple.UUID1
 scoreboard objectives remove kinetic_grapple.UUID2
 scoreboard objectives remove kinetic_grapple.UUID3
 
+data remove storage kinetic_grapple:storage grapple_strength
+
 datapack disable "file/Kinetic Grapple v1.0.1"
 datapack disable "file/Kinetic Grapple v1.0.1.zip"
