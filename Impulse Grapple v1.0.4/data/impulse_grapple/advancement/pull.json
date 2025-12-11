@@ -6,6 +6,6 @@
     }
   },
   "rewards": {
-    "function": "kinetic_grapple:pull"
+    "function": "impulse_grapple:pull"
   }
 }

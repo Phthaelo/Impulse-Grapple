@@ -40,7 +40,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "kinetic_grapple:saddle_clear"
+          "function": "impulse_grapple:saddle_clear"
         }
       }
     ]
