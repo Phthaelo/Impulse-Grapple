@@ -6,6 +6,7 @@ Simply cast your bobber onto a solid block, then reel it in to pull yourself wit
 
 Great for adventure maps, minigames, or survival worlds where you want more mobility for exploration.
 
+- Uses apply_impulse. Players must have an empty Saddle slot.
 - Pull strength scales with bobber distance.
 - Vanilla fishing and hooking mobs/items still work as normal.
 - Fully multiplayer compatible.
@@ -15,4 +16,4 @@ Feel free to use for custom maps, servers, and more!
 
 | Command                              | Description                                         |
 |--------------------------------------|:---------------------------------------------------:|
-| `/function kinetic_grapple:uninstall`|Remove Scoreboard Objectives and Storage, and disable Datapack|
+| `/function impulse_grapple:uninstall`|Remove Scoreboard Objectives and Storage, and disable Datapack|
